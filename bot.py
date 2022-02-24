@@ -58,6 +58,8 @@ async def echo(client, message):
 	],
 	[InlineKeyboardButton(" Next --->",callback_data = "page2")
 	]
+        [InlineKeyboardButton("Reklam 🇮🇳" ,url="https://t.me/dilmancreklam")
+        ]
 	] )
 	
  await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
