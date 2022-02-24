@@ -31,7 +31,7 @@ async def echo(client, message):
  
  keybord1= InlineKeyboardMarkup( [
         [ 
-            InlineKeyboardButton("Afrikaans", callback_data='af'),
+            InlineKeyboardButton("Turkish",callback_data = 'tr'),
              InlineKeyboardButton("Albanian", callback_data='sq'),
             InlineKeyboardButton("Amharic",callback_data ='am'),
         ],
@@ -67,7 +67,7 @@ async def echo(client, message):
 async def translate_text(bot,update):
   keybord6 =  InlineKeyboardMarkup([
        [InlineKeyboardButton("Thai",callback_data = "th"),
-       InlineKeyboardButton("Turkish",callback_data = "tr"),
+       InlineKeyboardButton("Afrikaans", callback_data="af"),
        InlineKeyboardButton("Turkmen",callback_data ="tk")     
        ],
        [InlineKeyboardButton("Ukrainian",callback_data = "uk"),
