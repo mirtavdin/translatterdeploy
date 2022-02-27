@@ -68,23 +68,23 @@ async def echo(client, message):
 @app.on_callback_query()
 async def translate_text(bot,update):
   keybord6 =  InlineKeyboardMarkup([
-       [InlineKeyboardButton("Thai",callback_data = "th"),
-       InlineKeyboardButton("Afrikaans", callback_data="af"),
-       InlineKeyboardButton("Turkmen",callback_data ="tk")     
+       [InlineKeyboardButton("Tayca",callback_data = "th"),
+       InlineKeyboardButton("Afrikanca", callback_data="af"),
+       InlineKeyboardButton("Türkməncə",callback_data ="tk")     
        ],
        [InlineKeyboardButton("Esperantoca",callback_data = "eo"),
-       InlineKeyboardButton("Urdu",callback_data = "ur"),
-       InlineKeyboardButton("Uyghur",callback_data ="ug")
+       InlineKeyboardButton("Urdu dili",callback_data = "ur"),
+       InlineKeyboardButton("Uyğurca",callback_data ="ug")
        
        ],
-       [InlineKeyboardButton("Uzbek",callback_data = "uz"),
-       InlineKeyboardButton("Vietnamese",callback_data ="vi"),
-       InlineKeyboardButton("Welsh",callback_data = "cy")
+       [InlineKeyboardButton("Özbəkcə",callback_data = "uz"),
+       InlineKeyboardButton("Vyetnam dili",callback_data ="vi"),
+       InlineKeyboardButton("Qaller dili",callback_data = "cy")
        
        ],
-       [InlineKeyboardButton("Xhosa",callback_data = "xh"),
-       InlineKeyboardButton("Yiddish",callback_data = "yi"),
-       InlineKeyboardButton("Yoruba",callback_data = "yo")],
+       [InlineKeyboardButton("Xosa dili",callback_data = "xh"),
+       InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
+       InlineKeyboardButton("Yoruba dili",callback_data = "yo")],
        [InlineKeyboardButton("<--- Back",callback_data = "page5")
        
        ]
