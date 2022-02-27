@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən Dilmanc Bot'am\n Mən göndərdiyin mesajı seçdiyin dilə tərcümə etmək üçün kodlaşdırılmışam\n Başlamaq üçün mənə 1 mesaj göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("··>Epic Projects <··" ,url="t.me/EpicProjects") ],               [InlineKeyboardButton("Kömək 🆘", url="t.me/LuxeSUP") ]   ]  ) )
                   
 
 
@@ -56,7 +56,7 @@ async def echo(client, message):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Reklam 🤖" ,url="https://t.me/dilmancreklam")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/dilmancreklam")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
@@ -84,7 +84,10 @@ async def translate_text(bot,update):
        ],
        [InlineKeyboardButton("Xosa dili",callback_data = "xh"),
        InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
-       InlineKeyboardButton("Yoruba dili",callback_data = "yo")],
+       InlineKeyboardButton("Yoruba dili",callback_data = "yo")
+       ],
+       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/dilmancreklam")
+       ],
        [InlineKeyboardButton(" ««« Geri",callback_data = "page5")
        
        ]
@@ -93,7 +96,7 @@ async def translate_text(bot,update):
   keybord5 = InlineKeyboardMarkup([
          [InlineKeyboardButton("Şotlandca",callback_data = "gd"),
          InlineKeyboardButton("Serbcə",callback_data = "sr"),
-         InlineKeyboardButton("Sesoto dili",callback_data = "st")
+         InlineKeyboardButton("Şesoto dili",callback_data = "st")
          ],
          [InlineKeyboardButton("Şona dili",callback_data ="sn"),
          InlineKeyboardButton("Sindcə",callback_data ="sd"),
@@ -108,12 +111,12 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Suahili dili",callback_data ="sw")
          ],
          [InlineKeyboardButton("İsveç dili",callback_data = "sv"),
-         InlineKeyboardButton("Filipin dilo",callback_data ='tl'),
+         InlineKeyboardButton("Filipin dili",callback_data ='tl'),
          InlineKeyboardButton("Tacikcə",callback_data = "tg")
          ],
          [InlineKeyboardButton("Tamil dili",callback_data = "ta"),
          InlineKeyboardButton("Tatarca",callback_data = "tt"),
-         InlineKeyboardButton("Telugu dilo",callback_data = "te")
+         InlineKeyboardButton("Telugu dili",callback_data = "te")
          ],
          [InlineKeyboardButton(" ««« Geri",callback_data = "page4"),
          InlineKeyboardButton(" Növbəti »»»",callback_data = "page6")
@@ -121,7 +124,7 @@ async def translate_text(bot,update):
    
  
   keybord4 = InlineKeyboardMarkup([
-          [InlineKeyboardButton("Malayya dilo",callback_data = "ml"),
+          [InlineKeyboardButton("Malayya dili",callback_data = "ml"),
           InlineKeyboardButton("Malta dili",callback_data = "mt"),
           InlineKeyboardButton("Maori dili",callback_data = "mi")
           ],
@@ -130,7 +133,7 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Myamma dili",callback_data = "my")
           ],
           [InlineKeyboardButton("Nepalca",callback_data ="ne"),
-          InlineKeyboardButton("Norveç dilo",callback_data = "no"),
+          InlineKeyboardButton("Norveç dili",callback_data = "no"),
           InlineKeyboardButton("Nyanja dili",callback_data = "ny")
           ],
           [InlineKeyboardButton("Odia dili",callback_data = "or"),
@@ -169,12 +172,12 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Kürdcə",callback_data = "ku")
                 ],
                 [ InlineKeyboardButton("Qırğızca",callback_data ="ky"),
-                InlineKeyboardButton("Lao dilo",callback_data = "lo"),
+                InlineKeyboardButton("Lao dili",callback_data = "lo"),
                 InlineKeyboardButton("Latınca",callback_data = "la")
                 ],
                 [InlineKeyboardButton("Latviyanca",callback_data = "lv"),
                 InlineKeyboardButton('Litvaca',callback_data ="lt"),
-                InlineKeyboardButton("Lüksemburq dilo",callback_data = "lb")
+                InlineKeyboardButton("Lüksemburq dili",callback_data = "lb")
                 ],
                 [InlineKeyboardButton("Makedonca",callback_data = "mk"),
                 InlineKeyboardButton("Malaqas dili",callback_data ="mg"),
@@ -215,7 +218,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Reklam 🤖" ,url="https://t.me/dilmancreklam")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/dilmancreklam")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
