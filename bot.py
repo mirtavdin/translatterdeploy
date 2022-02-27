@@ -58,11 +58,11 @@ async def echo(client, message):
 	],
         [InlineKeyboardButton("Reklam 🤖" ,url="https://t.me/dilmancreklam")
         ],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
 	] )
 	
- await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
+ await  message.reply_text("👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
 
 
 @app.on_callback_query()
@@ -85,68 +85,68 @@ async def translate_text(bot,update):
        [InlineKeyboardButton("Xosa dili",callback_data = "xh"),
        InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
        InlineKeyboardButton("Yoruba dili",callback_data = "yo")],
-       [InlineKeyboardButton("<--- Back",callback_data = "page5")
+       [InlineKeyboardButton(" ««« Geri",callback_data = "page5")
        
        ]
  ])
   
   keybord5 = InlineKeyboardMarkup([
-         [InlineKeyboardButton("Scots Gaelic",callback_data = "gd"),
-         InlineKeyboardButton("Serbian",callback_data = "sr"),
-         InlineKeyboardButton("Sesotho",callback_data = "st")
+         [InlineKeyboardButton("Şotlandca",callback_data = "gd"),
+         InlineKeyboardButton("Serbcə",callback_data = "sr"),
+         InlineKeyboardButton("Sesoto dili",callback_data = "st")
          ],
-         [InlineKeyboardButton("Shona",callback_data ="sn"),
-         InlineKeyboardButton("Sindhi",callback_data ="sd"),
-         InlineKeyboardButton("Sinhala (Sinhalese)",callback_data = "si")
+         [InlineKeyboardButton("Şona dili",callback_data ="sn"),
+         InlineKeyboardButton("Sindcə",callback_data ="sd"),
+         InlineKeyboardButton("Sinhala dili",callback_data = "si")
          ],
-         [InlineKeyboardButton("Slovak",callback_data = "sk"),
-         InlineKeyboardButton("Slovenian",callback_data = "sl"),
-         InlineKeyboardButton("Somali",callback_data = "so")
+         [InlineKeyboardButton("Slovakca",callback_data = "sk"),
+         InlineKeyboardButton("Slovenya dili",callback_data = "sl"),
+         InlineKeyboardButton("Somali dili",callback_data = "so")
          ],
          [InlineKeyboardButton("Katalanca",callback_data = "ca"),
-         InlineKeyboardButton("Sundanese",callback_data ="su"),
-         InlineKeyboardButton("Swahili",callback_data ="sw")
+         InlineKeyboardButton("Sundan dili",callback_data ="su"),
+         InlineKeyboardButton("Suahili dili",callback_data ="sw")
          ],
-         [InlineKeyboardButton("Swedish",callback_data = "sv"),
-         InlineKeyboardButton("Tagalog (Filipino)",callback_data ='tl'),
-         InlineKeyboardButton("Tajik",callback_data = "tg")
+         [InlineKeyboardButton("İsveç dili",callback_data = "sv"),
+         InlineKeyboardButton("Filipin dilo",callback_data ='tl'),
+         InlineKeyboardButton("Tacikcə",callback_data = "tg")
          ],
-         [InlineKeyboardButton("Tamil",callback_data = "ta"),
-         InlineKeyboardButton("Tatar",callback_data = "tt"),
-         InlineKeyboardButton("Telugu",callback_data = "te")
+         [InlineKeyboardButton("Tamil dili",callback_data = "ta"),
+         InlineKeyboardButton("Tatarca",callback_data = "tt"),
+         InlineKeyboardButton("Telugu dilo",callback_data = "te")
          ],
-         [InlineKeyboardButton("<--- Back",callback_data = "page4"),
-         InlineKeyboardButton("Next --->",callback_data = "page6")
+         [InlineKeyboardButton(" ««« Geri",callback_data = "page4"),
+         InlineKeyboardButton(" Növbəti »»»",callback_data = "page6")
          ]  ])
    
  
   keybord4 = InlineKeyboardMarkup([
-          [InlineKeyboardButton("Malayalam",callback_data = "ml"),
-          InlineKeyboardButton("Maltese",callback_data = "mt"),
-          InlineKeyboardButton("Maori",callback_data = "mi")
+          [InlineKeyboardButton("Malayya dilo",callback_data = "ml"),
+          InlineKeyboardButton("Malta dili",callback_data = "mt"),
+          InlineKeyboardButton("Maori dili",callback_data = "mi")
           ],
-          [InlineKeyboardButton("Marathi",callback_data = "mr"),
-          InlineKeyboardButton("Mongolian",callback_data = "mn"),
-          InlineKeyboardButton("Myanmar (Burmese)",callback_data = "my")
+          [InlineKeyboardButton("Marathi dili",callback_data = "mr"),
+          InlineKeyboardButton("Monqolca",callback_data = "mn"),
+          InlineKeyboardButton("Myamma dili",callback_data = "my")
           ],
-          [InlineKeyboardButton("Nepali",callback_data ="ne"),
-          InlineKeyboardButton("Norwegian",callback_data = "no"),
-          InlineKeyboardButton("Nyanja (Chichewa)",callback_data = "ny")
+          [InlineKeyboardButton("Nepalca",callback_data ="ne"),
+          InlineKeyboardButton("Norveç dilo",callback_data = "no"),
+          InlineKeyboardButton("Nyanja dili",callback_data = "ny")
           ],
-          [InlineKeyboardButton("Odia",callback_data = "or"),
-          InlineKeyboardButton("Pashto",callback_data = "ps"),
+          [InlineKeyboardButton("Odia dili",callback_data = "or"),
+          InlineKeyboardButton("Puştu dili ",callback_data = "ps"),
           InlineKeyboardButton("Korsikanca",callback_data = "co"),
           ],
-          [InlineKeyboardButton("Polish",callback_data = "pl"),
+          [InlineKeyboardButton("Polyakca",callback_data = "pl"),
           InlineKeyboardButton("Bosnakca",callback_data = "bs"),
-          InlineKeyboardButton("Punjabi",callback_data = "pa"),
+          InlineKeyboardButton("Pəncab dili",callback_data = "pa"),
           ],
-          [InlineKeyboardButton("Romanian",callback_data = "ro"),
+          [InlineKeyboardButton("Romanca",callback_data = "ro"),
           InlineKeyboardButton("Benqalca",callback_data = "bn"),
-          InlineKeyboardButton("Samoan",callback_data= "sm"),
+          InlineKeyboardButton("Samoa dili",callback_data= "sm"),
           ],
-          [InlineKeyboardButton("<--- Back",callback_data = "page3"),
-          InlineKeyboardButton("Next --->",callback_data = "page5")
+          [InlineKeyboardButton(" ««« Geri",callback_data = "page3"),
+          InlineKeyboardButton(" Növbəti »»»",callback_data = "page5")
           ]
           
  
@@ -157,31 +157,31 @@ async def translate_text(bot,update):
   
   keybord3 = InlineKeyboardMarkup([
                 [ InlineKeyboardButton("Hollandca",callback_data = "nl"),
-                InlineKeyboardButton("Japanese",callback_data = "ja"),
-                InlineKeyboardButton("Javanese",callback_data = "jv")
+                InlineKeyboardButton("Yaponca",callback_data = "ja"),
+                InlineKeyboardButton("Yava dili",callback_data = "jv")
                 ],
-                [InlineKeyboardButton("Kannada",callback_data = "kn"),
-                InlineKeyboardButton("Kazakh",callback_data = "kk"),
-                InlineKeyboardButton("Khmer",callback_data = "km")
+                [InlineKeyboardButton("Kanada dili",callback_data = "kn"),
+                InlineKeyboardButton("Qazax dili",callback_data = "kk"),
+                InlineKeyboardButton("Kxmer dili",callback_data = "km")
                 ],
-                [InlineKeyboardButton("Kinyarwanda",callback_data = "rw"),
+                [InlineKeyboardButton("Kinyarvan dili",callback_data = "rw"),
                 InlineKeyboardButton("Ərəbcə",callback_data ="ar"),
-                InlineKeyboardButton("Kurdish",callback_data = "ku")
+                InlineKeyboardButton("Kürdcə",callback_data = "ku")
                 ],
-                [ InlineKeyboardButton("Kyrgyz",callback_data ="ky"),
-                InlineKeyboardButton("Lao",callback_data = "lo"),
-                InlineKeyboardButton("Latin",callback_data = "la")
+                [ InlineKeyboardButton("Qırğızca",callback_data ="ky"),
+                InlineKeyboardButton("Lao dilo",callback_data = "lo"),
+                InlineKeyboardButton("Latınca",callback_data = "la")
                 ],
-                [InlineKeyboardButton("Latvian",callback_data = "lv"),
-                InlineKeyboardButton('Lithuanian',callback_data ="lt"),
-                InlineKeyboardButton("Luxembourgish",callback_data = "lb")
+                [InlineKeyboardButton("Latviyanca",callback_data = "lv"),
+                InlineKeyboardButton('Litvaca',callback_data ="lt"),
+                InlineKeyboardButton("Lüksemburq dilo",callback_data = "lb")
                 ],
-                [InlineKeyboardButton("Macedonian",callback_data = "mk"),
-                InlineKeyboardButton("Malagasy",callback_data ="mg"),
-                InlineKeyboardButton("Malay",callback_data ="ms")
+                [InlineKeyboardButton("Makedonca",callback_data = "mk"),
+                InlineKeyboardButton("Malaqas dili",callback_data ="mg"),
+                InlineKeyboardButton("Malay dili",callback_data ="ms")
                 ],
-                [InlineKeyboardButton("<--- Back",callback_data = "page2"),
-                InlineKeyboardButton(" Next --->",callback_data = "page4")
+                [InlineKeyboardButton(" ««« Geri",callback_data = "page2"),
+                InlineKeyboardButton(" Növbəti »»»",callback_data = "page4")
                 ]
               
  
@@ -217,38 +217,38 @@ async def translate_text(bot,update):
 	],
         [InlineKeyboardButton("Reklam 🤖" ,url="https://t.me/dilmancreklam")
         ],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
 	] )
   
   
   keybord2= InlineKeyboardMarkup([
            [InlineKeyboardButton("Ermənicə",callback_data = "hy"),
-           InlineKeyboardButton("Estonian",callback_data = "et"),
-           InlineKeyboardButton("Finnish",callback_data = "fi")
+           InlineKeyboardButton("Eston dili",callback_data = "et"),
+           InlineKeyboardButton("Finlandca",callback_data = "fi")
            ],
            [InlineKeyboardButton("Amharca",callback_data = "am"),
-           InlineKeyboardButton("Frisian",callback_data = "fy"),
-           InlineKeyboardButton("Galician",callback_data = "gl")
+           InlineKeyboardButton("Friz dili",callback_data = "fy"),
+           InlineKeyboardButton("Qalisiya dili",callback_data = "gl")
            ],
-           [InlineKeyboardButton("Georgian",callback_data = "ka"),
+           [InlineKeyboardButton("Gürcü dili",callback_data = "ka"),
            InlineKeyboardButton("Albanca",callback_data = "sq"),
            InlineKeyboardButton("Baskca",callback_data = "em")
            ],
-           [InlineKeyboardButton("Gujarati",callback_data = "gu"),
-           InlineKeyboardButton("Haitian Creole",callback_data = "ht"),
-           InlineKeyboardButton("Hausa",callback_data ="ha")
+           [InlineKeyboardButton("Qucarati dili",callback_data = "gu"),
+           InlineKeyboardButton("Haiti dili",callback_data = "ht"),
+           InlineKeyboardButton("Hausa dili",callback_data ="ha")
            ],
-           [InlineKeyboardButton("Hindi",callback_data = "hi"),
-           InlineKeyboardButton("Hungarian",callback_data = "hu"),
-           InlineKeyboardButton("Icelandic",callback_data = "is")
+           [InlineKeyboardButton("Hindicə",callback_data = "hi"),
+           InlineKeyboardButton("Macar dili",callback_data = "hu"),
+           InlineKeyboardButton("İslandiya dili",callback_data = "is")
            ],
-           [InlineKeyboardButton("Igbo",callback_data = "ig"),
-           InlineKeyboardButton("Indonesian",callback_data = "id"),
-           InlineKeyboardButton("Irish",callback_data = "ga")
+           [InlineKeyboardButton("Iqboca",callback_data = "ig"),
+           InlineKeyboardButton("İndoneziya dili",callback_data = "id"),
+           InlineKeyboardButton("Irland dili",callback_data = "ga")
            ],
-           [InlineKeyboardButton("<--- Back",callback_data = "page1"),
-           InlineKeyboardButton(" Next --->",callback_data = "page3"),
+           [InlineKeyboardButton(" ««« Geri",callback_data = "page1"),
+           InlineKeyboardButton(" Növbəti »»»",callback_data = "page3"),
            ]
             ])
 						
@@ -258,17 +258,17 @@ async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cb_data = update.data
   if cb_data== "page2":
-  	await update.message.edit("Select language 👇",reply_markup = keybord2)
+  	await update.message.edit("Dili seç ☟",reply_markup = keybord2)
   elif cb_data == "page1":
-  	await update.message.edit("Select language 👇",reply_markup =keybord1)
+  	await update.message.edit("Dili seç ☟",reply_markup =keybord1)
   elif cb_data =="page3":
-  	await update.message.edit("Select language 👇",reply_markup =keybord3)
+  	await update.message.edit("Dili seç ☟",reply_markup =keybord3)
   elif cb_data == "page4":
-  	await update.message.edit("Select language 👇",reply_markup =keybord4)
+  	await update.message.edit("Dili seç ☟",reply_markup =keybord4)
   elif cb_data =="page5":
-  	await update.message.edit("Select language 👇",reply_markup =keybord5)
+  	await update.message.edit("Dili seç ☟",reply_markup =keybord5)
   elif cb_data =="page6":
-  	await update.message.edit("Select language 👇",reply_markup =keybord6)
+  	await update.message.edit("Dili seç ☟",reply_markup =keybord6)
   else :
        translator = Translator()  
        translation = translator.translate(tr_text,dest=cb_data) 
