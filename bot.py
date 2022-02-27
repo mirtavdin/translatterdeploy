@@ -190,31 +190,33 @@ async def translate_text(bot,update):
   
   keybord1= InlineKeyboardMarkup( [
         [ 
-            InlineKeyboardButton("Afrikaans", callback_data='af'),
-             InlineKeyboardButton("Albanian", callback_data='sq'),
-            InlineKeyboardButton("Amharic",callback_data ='am'),
+            InlineKeyboardButton("Azərbaycanca",callback_data = 'az'),
+             InlineKeyboardButton("Almanca", callback_data='de'),
+            InlineKeyboardButton("Fransızca",callback_data ='fr'),
         ],
-        [   InlineKeyboardButton("Arabic", callback_data='ar'),
-        InlineKeyboardButton("Armenian", callback_data='hy'),      
-        InlineKeyboardButton("Azerbaijani",callback_data = 'az'),        
+        [   InlineKeyboardButton("Koreya dili", callback_data='ko'),
+        InlineKeyboardButton("İngilscə", callback_data='en'),      
+        InlineKeyboardButton("Türkcə",callback_data = 'tr'),        
         ],
-        [InlineKeyboardButton("Basque",callback_data ="eu"),
-        	 InlineKeyboardButton("Belarusian",callback_data ="be"),       	
-	InlineKeyboardButton("Bengali",callback_data="bn")],
+        [InlineKeyboardButton("Yunanca",callback_data ="el"),
+        	 InlineKeyboardButton("Belarusca",callback_data ="be"),       	
+	InlineKeyboardButton("Rusca",callback_data="ru")],
 	
-	[InlineKeyboardButton("Bosnian",callback_data = "bs"),
-	InlineKeyboardButton("Bulgarian",callback_data ="bg"),
-	InlineKeyboardButton("Catalan",callback_data = "ca")
+	[InlineKeyboardButton("Portuqalca",callback_data = "pt"),
+	InlineKeyboardButton("Bolqarca",callback_data ="bg"),
+	InlineKeyboardButton("İspanca",callback_data = "es")
 	],
 	[ 
-	InlineKeyboardButton("Corsican",callback_data ="co"),
-	InlineKeyboardButton("Croatian",callback_data = "hr"),
-	InlineKeyboardButton("Czech", callback_data = "cs"),
+	InlineKeyboardButton("Farsca",callback_data ="fa"),
+	InlineKeyboardButton("Xorvatca",callback_data = "hr"),
+	InlineKeyboardButton("Çexcə", callback_data = "cs"),
 	],
-	[ InlineKeyboardButton("Danish",callback_data = "da"),
-	InlineKeyboardButton("Dutch",callback_data = "nl"),
-	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
+	[ InlineKeyboardButton("Danimarkaca",callback_data = "da"),
+	InlineKeyboardButton("İtalyanca",callback_data = "it"),
+	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
+        [InlineKeyboardButton("Reklam 🤖" ,url="https://t.me/dilmancreklam")
+        ],
 	[InlineKeyboardButton(" Next --->",callback_data = "page2")
 	]
 	] )
