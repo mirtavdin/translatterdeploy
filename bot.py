@@ -56,7 +56,7 @@ async def echo(client, message):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/dilmancreklam")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/epicreklam")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
@@ -86,7 +86,7 @@ async def translate_text(bot,update):
        InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
        InlineKeyboardButton("Yoruba dili",callback_data = "yo")
        ],
-       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/dilmancreklam")
+       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/epicreklam")
        ],
        [InlineKeyboardButton(" ««« Geri",callback_data = "page5")
        
@@ -218,7 +218,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/dilmancreklam")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/epicreklam")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
