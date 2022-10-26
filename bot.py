@@ -218,7 +218,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/epicreklam")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/VusalMemmedov13")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
