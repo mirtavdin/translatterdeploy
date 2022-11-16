@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən Tərcüməçi Bot 🌍'am\n Mən göndərdiyin mesajı seçdiyin dilə tərcümə etmək üçün kodlaşdırılmışam\n Başlamaq üçün mənə 1 mesaj göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("··>Nyzmi Project <··" ,url="t.me/NyzmiBotlarim") ],               [InlineKeyboardButton("Kömək 🆘", url="t.me/Vusalim") ]   ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən 🌐 Google Translate Bot 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("⚡ DİGƏR BOTLARIM" ,url="t.me/menimbitlarim") ],               [InlineKeyboardButton("🇦🇿 OWNER 👨‍💻", url="t.me/sesizKOLGE") ]   ]  ) )
                   
 
 
@@ -31,7 +31,7 @@ async def echo(client, message):
  
  keybord1= InlineKeyboardMarkup( [
         [ 
-            InlineKeyboardButton("Azərbaycanca",callback_data = 'az'),
+            InlineKeyboardButton("Azərbaycanca ",callback_data = 'az'),
              InlineKeyboardButton("Almanca", callback_data='de'),
             InlineKeyboardButton("Fransızca",callback_data ='fr'),
         ],
@@ -56,7 +56,7 @@ async def echo(client, message):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/Vusaliw")
+        [InlineKeyboardButton("☎️ Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/sesizKOLGE")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
