@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən 🌐 Google Translate Bot 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("🐾 Owner  " ,url="t.me/vusalmemmedov13") ],               [InlineKeyboardButton("🇦🇿 OWNER 👨‍💻", url="t.me/sesizKOLGE") ]   ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən 🌐 Google Translate Bot 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("🐾 Owner  " ,url="t.me/vusalmemmedov13") ],               [InlineKeyboardButton("Blog  ", url="t.me/VusalinBlogu") ]   ]  ) )
                   
 
 
@@ -86,7 +86,7 @@ async def translate_text(bot,update):
        InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
        InlineKeyboardButton("Yoruba dili",callback_data = "yo")
        ],
-       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/epicreklam")
+       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="vusalmemmedov13")
        ],
        [InlineKeyboardButton(" ««« Geri",callback_data = "page5")
        
