@@ -56,7 +56,7 @@ async def echo(client, message):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("☎️ Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/sesizKOLGE")
+        [InlineKeyboardButton("☎️ Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/vusalmemmedov13")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
