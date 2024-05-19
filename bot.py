@@ -1,5 +1,6 @@
 # @mrlokaman ©️ shyan
 #lntechnical
+from pyrogram.enums import ParseMode
 import os
 from pyrogram import Client, filters
 from pyrogram.types import (
@@ -7,20 +8,32 @@ from pyrogram.types import (
     InlineKeyboardMarkup
 )
 from googletrans import Translator
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("TOKEN", "zzzzzzzz")
 
-API_ID = int(os.environ.get("API_ID", 12345))
+API_ID = int(os.environ.get("API_ID", "8953338"))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "fe21f223cb02d8f7c1cbda651f553a45")
 app = Client(
         "Gtt",
         bot_token=TOKEN,api_hash=API_HASH,
             api_id=API_ID
     )
 
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən Tərcüməçi Bot 🌎 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("🐾 Owner  " ,url="t.me/vusaaallll") ],               [InlineKeyboardButton("Yenilik Kanalı 🌎 ", url="t.me/TercumeciBotYenilikler") ]   ]  ) )
+    await message.reply_text(
+        text=f"Salam **{message.from_user.first_name}** \n\n __Mən Tərcüməçi Bot 🌎 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",
+        reply_to_message_id=message.message_id,
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("🐾 Owner", url="t.me/vusaaallll")],
+            [InlineKeyboardButton("Yenilik Kanalı 🌎", url="t.me/TercumeciBotYenilikler")]
+        ])
+    )
+
                   
 
 
@@ -258,23 +271,32 @@ async def translate_text(bot,update):
   
   
   
-  tr_text = update.message.reply_to_message.text
-  cb_data = update.data
-  if cb_data== "page2":
-  	await update.message.edit("Dili seç ☟",reply_markup = keybord2)
-  elif cb_data == "page1":
-  	await update.message.edit("Dili seç ☟",reply_markup =keybord1)
-  elif cb_data =="page3":
-  	await update.message.edit("Dili seç ☟",reply_markup =keybord3)
-  elif cb_data == "page4":
-  	await update.message.edit("Dili seç ☟",reply_markup =keybord4)
-  elif cb_data =="page5":
-  	await update.message.edit("Dili seç ☟",reply_markup =keybord5)
-  elif cb_data =="page6":
-  	await update.message.edit("Dili seç ☟",reply_markup =keybord6)
-  else :
-       translator = Translator()  
-       translation = translator.translate(tr_text,dest=cb_data) 
-       await update.message.edit(translation.text)
+from pyrogram import Client, filters
+from googletrans import Translator
 
+
+
+# Define your asynchronous function
+async def my_function(update):
+    tr_text = update.message.reply_to_message.text if update.message.reply_to_message else ""
+    cb_data = update.data
+
+    if cb_data == "page2":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord2)
+    elif cb_data == "page1":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord1)
+    elif cb_data == "page3":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord3)
+    elif cb_data == "page4":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord4)
+    elif cb_data == "page5":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord5)
+    elif cb_data == "page6":
+        await update.message.edit("Dili seç ☟", reply_markup=keybord6)
+    else:
+        translator = Translator()
+        translation = translator.translate(tr_text, dest=cb_data)
+        await update.message.edit(translation.text)
+
+# Run your Pyrogram client
 app.run()
