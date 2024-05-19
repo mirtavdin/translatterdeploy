@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən Tərcüməçi Bot 🌎 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("🐾 Owner  " ,url="t.me/vusaaallll") ],               [InlineKeyboardButton("Yenilik Kanalı 🌎 ", url="t.me/TercumeciBotYenilikler") ]   ]  ) )
+await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən Tərcüməçi Bot 🌎 'Am\n Mən Göndərdiyin Mesajı Seçdiyin Dilə Tərcümə Etmək Üçün Proqramlaşdırılmışam\nBaşlamaq Üçün Mənə 1 Mesaj Göndər__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [InlineKeyboardButton("🐾 Owner  " ,url="t.me/vusaaallll") ],               [InlineKeyboardButton("Yenilik Kanalı 🌎 ", url="t.me/TercumeciBotYenilikler") ]   ]  ) )
                   
 
 
