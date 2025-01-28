@@ -29,7 +29,7 @@ async def start(client, message):
         reply_to_message_id=message.message_id,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🐾 Owner", url="t.me/vusaaallll")],
+            [InlineKeyboardButton("🐾 Owner", url="t.me/vusalxw")],
             [InlineKeyboardButton("Yenilik Kanalı 🌎", url="t.me/TercumeciBotYenilikler")]
         ])
     )
@@ -69,7 +69,7 @@ async def echo(client, message):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("☎️ Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/vusaaallll")
+        [InlineKeyboardButton("☎️ Burada sizin reklamınız ola bilər ✔ " ,url="https://t.me/vusalxw")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
@@ -99,7 +99,7 @@ async def translate_text(bot,update):
        InlineKeyboardButton("Yəhudi dili",callback_data = "yi"),
        InlineKeyboardButton("Yoruba dili",callback_data = "yo")
        ],
-       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="vusaaallll")
+       [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="vusalxw")
        ],
        [InlineKeyboardButton(" ««« Geri",callback_data = "page5")
        
@@ -231,7 +231,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("İtalyanca",callback_data = "it"),
 	InlineKeyboardButton("Ukraynaca",callback_data = "uk"),	 
 	],
-        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/TercumeciBotYenilikler")
+        [InlineKeyboardButton("Burada sizin reklamınız ola bilər ✔" ,url="https://t.me/vusalxw")
         ],
 	[InlineKeyboardButton(" Növbəti »»»",callback_data = "page2")
 	]
