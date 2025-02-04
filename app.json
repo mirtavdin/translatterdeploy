@@ -1,5 +1,5 @@
 {
-    "name": "Google Translater",
+    "name": "translatedeploy",
     "description": "Bot can translate any language to you selected language",
     "repository": "https://github.com/mirtavdin/translatterdeploy-",
     "keywords": ["Google Translater", "pyrogram", "telegram bot"],
